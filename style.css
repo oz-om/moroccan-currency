@@ -1,0 +1,96 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 99%;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.container > h2 {
+  border: 1px solid #29007B;
+  width: 270px;
+  padding: 10px 20px;
+  box-shadow: 0 10px 20px 1px #d0d0d0;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #210063;
+  position: relative
+}
+.container h2:after {
+  content: "converting";
+  width: fit-content;
+  padding: 5px 10px;
+  border: 0.5px solid #210063;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 75%;
+  background-color: #fff
+}
+
+.main {
+  width: 440px;
+  box-shadow: 0 10px 20px 1px #d0d0d0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "dh ryal" "frank frank";
+  grid-column-gap: 15%;
+  grid-row-gap: 20%;
+  place-content: center;
+  place-items: center;
+  padding: 100px 0;
+}
+[type=number] {
+  appearance: none;
+  height: 100px;
+  width: 170px;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #280078;
+  caret-color: #5400FF
+}
+.main > div {
+  box-shadow: 0 10px 20px 1px #d0d0d0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main > div h3 {
+  padding-left: 10px;
+  font-weight: 300;
+  color: #29007B;
+  font-size: 16px;
+}
+.dh {
+  grid-area: dh;
+}
+.ryal {
+  grid-area: ryal
+}
+.frank {
+  grid-area: frank;
+}
